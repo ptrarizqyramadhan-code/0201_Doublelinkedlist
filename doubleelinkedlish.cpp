@@ -1,4 +1,4 @@
- // 4NimBelakang_Doublelinkedlist
+// 4NimBelakang_Doublelinkedlist
 #include <iostream>
 #include <string>
 using namespace std;
@@ -190,4 +190,14 @@ public:
             return;
         }
 
-       
+        int rollNo;
+        cout << "\nEnter the roll number to search: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        // Step 1: Traverse to find matching roll number
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
+        
