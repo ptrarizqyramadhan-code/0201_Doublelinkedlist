@@ -1,4 +1,4 @@
-// 4NimBelakang_Doublelinkedlist
+ // 4NimBelakang_Doublelinkedlist
 #include <iostream>
 #include <string>
 using namespace std;
@@ -182,4 +182,12 @@ public:
         }
     }
 
-    
+    void searchData()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+       
